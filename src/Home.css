@@ -1,0 +1,138 @@
+  body {
+    background: black;
+  }
+  
+  .animated-element {
+    width: 100%;
+    height: 100%;
+      /* background: black; */
+    margin: 0;
+    overflow: hidden;
+    
+      /* Center items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animated-element .a-long-time-ago {
+    position: relative;
+    margin-top: 300px;
+
+    font-size: 32px;
+    color: #4bd5ee;
+      /* Animation */
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+  }
+
+  .animated-element .a-long-time-ago {
+    bottom: 20%;
+  }
+  
+  @keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+  
+    20% {
+        opacity: 1;
+    }
+  
+    80% {
+        opacity: 1;
+    }
+  
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  .animated-element .logo {
+    position: absolute;
+    margin: 0 0 250px -300px;
+    transform-origin: center top;
+  }
+
+  /* .animated-element .logo {
+    left: 50%;
+    width: 800px;
+    bottom: 30%;
+  } */
+
+  .animated-element .logo > img {
+    position: absolute;
+    opacity: 0;
+    animation: logo 10s;
+  }
+
+  @keyframes logo {
+    0% {
+        transform: scale(5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: scale(5);
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(5);
+
+        
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+  .animated-element .crawl {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+  
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+  }
+  
+  .animated-element .crawl > div {
+    position: absolute;
+    top: 100%; 
+    animation-delay: 10s;
+    animation-duration: 20s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+  
+    80% {
+        opacity: 1;
+    }
+  
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {}
