@@ -25,16 +25,16 @@
 
 ## How to run and test
 
-![](images/create_n_activate_users.PNG)
+![](images/create_n_activate_users.png)
 
 - Sign up for a Sendbird account to create an application and obtain an AppID, create users for testing, and generate tokens to activate the users.
 - Create an open channel.
 
-![](images/open_channels.PNG)
+![](images/open_channels.png)
 - Proceed with tests on two simple apps if an open channel is created and two users are activated with each token. Sendbird's dashboard can also be used as an application on one side.
 - Two apps are used: one is the mockup for Task 1 created in this repository, and the other is Sendbird's dashboard in-app or basic-open-channel-sample. The former runs on localhost:3100, and the latter runs on localhost:3000 by default.
 
-![](images/task-1.PNG)
+![](images/task-1.png)
 
 # Task-2
 ## How to implement
@@ -64,7 +64,7 @@
 - Run two apps: one for this mock-up's Task 2 and another for Sendbird's basic-group-channel-sample (or use Sendbird's in-app chat in the dashboard).
 - As authenticated and activated users of Sendbird's website, create channels for testing.
 
-![](images/task-2.PNG)
+![](images/task-2.png)
 
 # Task-3
 ## How to implement
@@ -135,7 +135,7 @@
 - Run two apps: one for this mock-up's task3 and another for Sendbird's basic-group-channel-sample or (Sendbird's in-app for chatting in the dashboard).
 - As authenticated and activated users of Sendbird's website, create channels for testing.
 
-![](images/task-3.PNG)
+![](images/task-3.png)
 
 # Features and Designs
 ## 1. Landing page with animation effects and sounds in 'Starwars Intro'
@@ -155,7 +155,7 @@
         // Add event listener for mouse down
         document.body.addEventListener('mousedown', handleMouseDown);
     ```
-![](images/starwars_intro.PNG)
+![](images/starwars_intro.png)
 
 ## 2. Screen Lock Function for Privacy Protection
 - Set a timer for screen lock (default: 10 sec).
@@ -177,11 +177,11 @@
         <LockScreen timeout={20000} ui={getLockScreenUi}>
     ```
 
-![](images/screen_lock.PNG)
+![](images/screen_lock.png)
 
 ## 3. Navigation Links for Each Task on the Menu Page
 
-![](images/menu_page.PNG)
+![](images/menu_page.png)
 
 ## 4. Design Inspired by 'Starwars'
 - Layout using Flexbox similar to Sendbird's sample app.
